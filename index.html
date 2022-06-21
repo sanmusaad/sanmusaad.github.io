@@ -4,8 +4,38 @@ $api_url = "https://api.cuty.io/quick?token={$api_token}&url={$long_url}";
 $result = @json_decode(file_get_contents($api_url), true);
 <!DOCTYPE html>
 
+   $long_url = urlencode('yourdestinationlink.com');
+$api_token = '0d9a745352f55dfdbe8e54a81';
+$api_url = "https://api.cuty.io/quick?token={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url), true);
+
+
+
 <html lang="en">
+   
+   
+   
+      $long_url = urlencode('yourdestinationlink.com');
+$api_token = '0d9a745352f55dfdbe8e54a81';
+$api_url = "https://api.cuty.io/quick?token={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url), true);
+   
+   
+   
+   
+   
   <head>
+     
+     
+     
+      $long_url = urlencode('yourdestinationlink.com');
+$api_token = '0d9a745352f55dfdbe8e54a81';
+$api_url = "https://api.cuty.io/quick?token={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url), true);  
+     
+     
+     
+     
     <title>Bouncy Another Echidna</title>
     <meta property="og:title" content="Bouncy Another Echidna" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -68,7 +98,7 @@ $result = @json_decode(file_get_contents($api_url), true);
           </a>
         </div>
         <div class="home-gallery-card">
-          <h2 class="home-text1">fee222222222eeeeeeeef</h2>
+          <h2 class="home-text1">feeqqqqqqqqqqqqqeee222222f</h2>
           <img
             alt="image"
             src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxmb3Jlc3R8ZW58MHx8fHwxNjI2MjUxMjg4&amp;ixlib=rb-1.2.1&amp;h=1200"
@@ -103,4 +133,23 @@ if ($result["success"] === true) {
     
     
   </body>  
+   
+   
+   
+   
+   
+   
+   
+if ($result["success"] === true) {
+    echo $result["short_url"];
+} else {
+    echo $result["message"];
+} 
+    
+    
+   
+   
+   
+   
+   
 </html>
