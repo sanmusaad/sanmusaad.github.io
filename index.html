@@ -1,3 +1,7 @@
+   $long_url = urlencode('yourdestinationlink.com');
+$api_token = '0d9a745352f55dfdbe8e54a81';
+$api_url = "https://api.cuty.io/quick?token={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url), true);
 <!DOCTYPE html>
 
 <html lang="en">
@@ -78,19 +82,25 @@
     
     
     
+  
     
     
-    <script type="text/javascript">
-    var app_url = 'https://exe.io/';
-    var app_api_token = 'e3547ee85d6f8d445ee91d3c602d3213ff70fe5b';
-    var app_advert = 2;
-    var app_exclude_domains = ["sanmusaad.github.io"];
-</script>
-<script src='//exe.io/js/full-page-script.js'></script>
+
+
+if ($result["success"] === true) {
+    echo $result["short_url"];
+} else {
+    echo $result["message"];
+} 
+    
+    
+    
+    
+
     
     
     
     
     
-  </body>
+  </body>  
 </html>
